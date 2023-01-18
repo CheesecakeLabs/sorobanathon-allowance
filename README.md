@@ -109,9 +109,54 @@
     --rpc-url http://localhost:8000/soroban/rpc \
     --network-passphrase 'Test SDF Future Network ; October 2022' \
     --fn initialize \
-    --arg '{"object":{"vec":[{"symbol":"Account"},{"object":{"account_id":{"public_key_type_ed25519":"6c941fb51890a054ae4ab8dec4fd77db9d7e3baf9d24993c4d20eedc3ea7f62b"}}}]}}' \
+    --arg '{"object":{"account_id":{"public_key_type_ed25519":"6c941fb51890a054ae4ab8dec4fd77db9d7e3baf9d24993c4d20eedc3ea7f62b"}}}' \
     --arg 8216da0fc28346cdd27a61819f93cc7c1488584717ba6e94a8e45a5daa084688 \
     --arg 300 \
     --arg 0 \
     --arg 0
+  ```
+
+15. Test getStep
+  ```
+  soroban invoke \
+    --id 07cc3fbe8350d9f4135b6065f3dc9599a12d58b1266223ff7cc259c429008a54 \
+    --secret-key SDVSMGYKIFR3MLUPY5FEZRKKUC6Y4GZDIYPSC4SMSALLR665POBPABFM \
+    --rpc-url http://localhost:8000/soroban/rpc \
+    --network-passphrase 'Test SDF Future Network ; October 2022' \
+    --fn getStepP
+  ```
+
+16. Test setAllow
+  ```
+  soroban invoke \
+    --id 07cc3fbe8350d9f4135b6065f3dc9599a12d58b1266223ff7cc259c429008a54 \
+    --secret-key SDVSMGYKIFR3MLUPY5FEZRKKUC6Y4GZDIYPSC4SMSALLR665POBPABFM \
+    --rpc-url http://localhost:8000/soroban/rpc \
+    --network-passphrase 'Test SDF Future Network ; October 2022' \
+    --fn setAllow \
+    --arg '{"object":{"account_id":{"public_key_type_ed25519":"950e11350a7b863ea4260abe06c78a7262e26a35eb04867916547e099b3d21fa"}}}' \
+    --arg 1000
+  ```
+
+17. Test withdraw
+  ```
+  soroban invoke \
+    --id 07cc3fbe8350d9f4135b6065f3dc9599a12d58b1266223ff7cc259c429008a54 \
+    --secret-key SAE6QSAEAT5PMA6VTMFE6RCYMIKVRMJKNESYK5NJ5W6DZ4ESLJUCEPIH \
+    --rpc-url http://localhost:8000/soroban/rpc \
+    --network-passphrase 'Test SDF Future Network ; October 2022' \
+    --fn withdraw \
+    --arg '{"object":{"account_id":{"public_key_type_ed25519":"950e11350a7b863ea4260abe06c78a7262e26a35eb04867916547e099b3d21fa"}}}' \
+    --arg 700
+  ```
+
+17. Test getWthdrwn
+  ```
+  soroban invoke \
+    --id 07cc3fbe8350d9f4135b6065f3dc9599a12d58b1266223ff7cc259c429008a54 \
+    --secret-key SAE6QSAEAT5PMA6VTMFE6RCYMIKVRMJKNESYK5NJ5W6DZ4ESLJUCEPIH \
+    --rpc-url http://localhost:8000/soroban/rpc \
+    --network-passphrase 'Test SDF Future Network ; October 2022' \
+    --fn getWthdrwn \
+    --arg '{"object":{"account_id":{"public_key_type_ed25519":"950e11350a7b863ea4260abe06c78a7262e26a35eb04867916547e099b3d21fa"}}}'
   ```
