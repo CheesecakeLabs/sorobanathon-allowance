@@ -138,7 +138,7 @@
     --arg 1000
   ```
 
-17. Test withdraw
+17. Test withdraw (NOT WORKING YET)
   ```
   soroban invoke \
     --id 07cc3fbe8350d9f4135b6065f3dc9599a12d58b1266223ff7cc259c429008a54 \
@@ -150,7 +150,7 @@
     --arg 700
   ```
 
-17. Test getWthdrwn
+17. Test getWthdrwn (NOT WORKING YET)
   ```
   soroban invoke \
     --id 07cc3fbe8350d9f4135b6065f3dc9599a12d58b1266223ff7cc259c429008a54 \
