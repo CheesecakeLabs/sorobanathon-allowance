@@ -60,6 +60,10 @@ pub fn read_allowance(env: &Env, child_account: AccountId) -> i128 {
     env.storage().get_unchecked(DataKey::Allowance(child_account)).unwrap()
 }
 
+pub fn has_allowance(env: &Env, child_account: AccountId) -> bool {
+    env.storage().has(DataKey::Allowance(child_account))
+}
+
 pub fn read_start_period(env: &Env) -> u64 {
     env.storage().get_unchecked(DataKey::StrtPeriod).unwrap()
 }

@@ -152,6 +152,10 @@ impl ParentAllowanceTrait for ParentAllowance {
             panic_with_error!(&env, Error::AllowancePeriodEnded);
         }
 
+        if !has_allowance(&env, child_account.clone()){
+            panic_with_error!(&env, Error::ChildNotSet);
+        }
+
         let child_allowance = read_allowance(&env, child_account.clone());
         let token_address = read_token_address(&env);
         let step_period = read_step_period(&env);

@@ -12,5 +12,6 @@ pub enum Error {
     InvalidInvoker = 6,
     InsufficientAllowance = 7 ,
     AllowancePeriodEnded = 8,
-    AllowancePeriodNotSarted = 9
+    AllowancePeriodNotSarted = 9,
+    ChildNotSet = 10,
 }

@@ -7,34 +7,34 @@ The children can withdraw according to the amount allowed.
 
 <img src="images/overview.png" width="85%" />
 
-## Principal functions
+## Main functions
 ### initialize 
-Used to set the initial contract configuration, specifying the admin, the token contract id, start time and end time and the step of each allowance calculation.
+Sets the initial contract configuration, specifying the admin, the token contract id, start and end times, and the step between increments of the allowance amounts.
+
 ### set_allow
-Set the user AccountID (child account) and the amount to allowance. It's possible to set more them one account.
+Sets the AccountID of the child account and the incremental amount of the allowance per step. It's possible to set more than one child account.
+
 ### withdraw
-Allows the AccountID (child account) and 
+Allows the AccountID (child) to withdraw a desired amount. The function then checks for the availability of the specified amount. For the allowance to be available, the `withdraw` function must be called between the start and end periods. In order to realize the transfer operation, the external token contract is callled, invoking its `xfer_from` function.
 
-### Auxiliar functions
-
+## Auxiliar functions
 ### get_allow
-get the allowance to a specific account id (child)
+Gets the per step allowance increment of a given child.
 
 ### get_wthdr
-<!-- get the withdraw t -->
+Get the amount of allowance already withdrawn by a given child account.
 
 ### get_aval
+Gets the amount of allowance available for a given child account.
 
 ### get_start
-get the start period to allow the allowance
-
-
-### get_step
-get the step period to re calculate the allowance to each child
-
+Gets the start period.
 
 ### get_end
-get the end period
+Gets the end period.
+
+### get_step
+Get the step period between increments of the allowances.
 
 
 <img src="images/steps.png" width="85%" />

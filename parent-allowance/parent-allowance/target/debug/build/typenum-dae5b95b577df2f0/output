@@ -1,3 +1,3 @@
 cargo:rerun-if-changed=build/main.rs
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/ericorosiskiweber/Documents/GitHub/sorobanathon-allowance/parent-allowance/parent-allowance/target/debug/build/typenum-dae5b95b577df2f0/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/ericorosiskiweber/Documents/GitHub/sorobanathon-allowance/parent-allowance/parent-allowance/target/debug/build/typenum-dae5b95b577df2f0/out/op.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/danielburghardt/Documents/repos/sorobanathon-allowance/parent-allowance/parent-allowance/target/debug/build/typenum-dae5b95b577df2f0/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/danielburghardt/Documents/repos/sorobanathon-allowance/parent-allowance/parent-allowance/target/debug/build/typenum-dae5b95b577df2f0/out/op.rs
