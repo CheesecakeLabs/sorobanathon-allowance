@@ -1,7 +1,0 @@
-/Users/danielburghardt/Documents/repos/sorobanathon-allowance/parent-allowance/parent-allowance/target/debug/deps/libsoroban_native_sdk_macros-85f6189dcb201436.dylib: /Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/lib.rs /Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/derive_fn.rs /Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/derive_type.rs
-
-/Users/danielburghardt/Documents/repos/sorobanathon-allowance/parent-allowance/parent-allowance/target/debug/deps/soroban_native_sdk_macros-85f6189dcb201436.d: /Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/lib.rs /Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/derive_fn.rs /Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/derive_type.rs
-
-/Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/lib.rs:
-/Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/derive_fn.rs:
-/Users/danielburghardt/.cargo/registry/src/github.com-1ecc6299db9ec823/soroban-native-sdk-macros-0.0.12/src/derive_type.rs:
