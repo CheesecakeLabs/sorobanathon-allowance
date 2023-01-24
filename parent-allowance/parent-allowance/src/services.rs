@@ -1,8 +1,7 @@
 
 use crate::context::{DataKey, State};
 use crate::errors::Error;
-use soroban_auth::{Identifier, Signature};
-use soroban_sdk::{panic_with_error, vec, AccountId, Address, BytesN, Env, Vec};
+use soroban_sdk::{AccountId, Address, BytesN, Env};
 
 //
 // Write functions

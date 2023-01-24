@@ -3,7 +3,7 @@ use crate::errors::Error;
 use crate::services::*;
 
 use soroban_auth::{Identifier, Signature};
-use soroban_sdk::{contractimpl, panic_with_error, AccountId, Address, BytesN, Env, Vec};
+use soroban_sdk::{contractimpl, panic_with_error, AccountId, Address, BytesN, Env};
 
 pub mod token {
     soroban_sdk::contractimport!(file = "../soroban_token_contract.wasm");
@@ -178,7 +178,7 @@ impl ParentAllowanceTrait for ParentAllowance {
         write_withdrawn_allowance(
             &env,
             child_account.clone(),
-            (draw_amount + withdrawn_allowance),
+            draw_amount + withdrawn_allowance,
         );
 
         //Transfer the withdrawn value from the parent account to the child account
