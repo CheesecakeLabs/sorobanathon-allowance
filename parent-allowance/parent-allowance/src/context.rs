@@ -1,6 +1,4 @@
 use soroban_sdk::{AccountId, contracttype};
-//use soroban_auth::Identifier;
-
 
 #[derive(Clone, Debug, PartialEq, Eq)]
 #[contracttype]
@@ -22,6 +20,4 @@ pub enum DataKey {
     EndPeriod,  // u64
     TokenAddr,  // BytesN
     State,      // enum State
-    // TicktPrice, // i128
-    // Users,      // Vec<Identifier>
 }

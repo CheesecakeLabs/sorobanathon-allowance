@@ -1,4 +1,45 @@
-# sorobanathon-allowance
+# Soroban Hackaton Parent Control Allowance
+
+The focus of this smart contract is a parent account (admin) allows users (children) to allowance a specific amount in a specific range of time according to a step period.
+
+The Parent set the children and the amount to each one.
+The children can withdraw according to the amount allowed.
+
+<img src="images/overview.png" width="85%" />
+
+## Main functions
+### initialize 
+Sets the initial contract configuration, specifying the admin, the token contract id, start and end times, and the step between increments of the allowance amounts.
+
+### set_allow
+Sets the AccountID of the child account and the incremental amount of the allowance per step. It's possible to set more than one child account.
+
+### withdraw
+Allows the AccountID (child) to withdraw a desired amount. The function then checks for the availability of the specified amount. For the allowance to be available, the `withdraw` function must be called between the start and end periods. In order to realize the transfer operation, the external token contract is callled, invoking its `xfer_from` function.
+
+## Auxiliar functions
+### get_allow
+Gets the per step allowance increment of a given child.
+
+### get_wthdr
+Get the amount of allowance already withdrawn by a given child account.
+
+### get_aval
+Gets the amount of allowance available for a given child account.
+
+### get_start
+Gets the start period.
+
+### get_end
+Gets the end period.
+
+### get_step
+Get the step period between increments of the allowances.
+
+
+<img src="images/steps.png" width="85%" />
+
+# Step by step to run the contract
 
 1. Build the wasm
   ```
